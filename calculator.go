@@ -1,9 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"math"
-	"bufio"
 	"os"
 	"strconv"
 	"strings"
@@ -22,6 +22,7 @@ func menu(){
 	fmt.Scan(&i)
     //fmt.Print("Write ", i, " as ")
 	fmt.Println(i)
+	
 
     switch i {
 		case 1:
@@ -46,6 +47,7 @@ func add(){
 	fmt.Println("Add Two Integers Together. ")
 	fmt.Print("Enter first integer: ")
 	input1, _ := reader.ReadString('\n')
+	fmt.Scan(&input1)
 	float1, err := strconv.ParseFloat(strings.TrimSpace(input1), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -56,6 +58,7 @@ func add(){
 
 	fmt.Print("Enter second integer: ")
 	input2, _ := reader.ReadString('\n')
+	fmt.Scan(&input2)
 	float2, err := strconv.ParseFloat(strings.TrimSpace(input2), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -80,6 +83,7 @@ func subtract(){
 	fmt.Println("Subtract one number from another. ")
 	fmt.Print("Enter first integer: ")
 	input1, _ := reader.ReadString('\n')
+	fmt.Scan(&input1)
 	float1, err := strconv.ParseFloat(strings.TrimSpace(input1), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -90,6 +94,7 @@ func subtract(){
 
 	fmt.Print("Enter second integer: ")
 	input2, _ := reader.ReadString('\n')
+	fmt.Scan(&input2)
 	float2, err := strconv.ParseFloat(strings.TrimSpace(input2), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -112,6 +117,7 @@ func multiply(){
 	fmt.Println("Multiply one number to another. ")
 	fmt.Print("Enter first integer: ")
 	input1, _ := reader.ReadString('\n')
+	fmt.Scan(&input1)
 	float1, err := strconv.ParseFloat(strings.TrimSpace(input1), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -122,6 +128,7 @@ func multiply(){
 
 	fmt.Print("Enter second integer: ")
 	input2, _ := reader.ReadString('\n')
+	fmt.Scan(&input2)
 	float2, err := strconv.ParseFloat(strings.TrimSpace(input2), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -144,6 +151,7 @@ func divide(){
 	fmt.Println("divide one number from another. ")
 	fmt.Print("Enter first integer: ")
 	input1, _ := reader.ReadString('\n')
+	fmt.Scan(&input1)
 	float1, err := strconv.ParseFloat(strings.TrimSpace(input1), 64)
 	if err != nil {
 		fmt.Println(err)
@@ -154,6 +162,7 @@ func divide(){
 
 	fmt.Print("Enter second integer: ")
 	input2, _ := reader.ReadString('\n')
+	fmt.Scan(&input2)
 	float2, err := strconv.ParseFloat(strings.TrimSpace(input2), 64)
 	if err != nil {
 		fmt.Println(err)
